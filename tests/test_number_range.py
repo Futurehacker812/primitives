@@ -1,8 +1,9 @@
-from pytest import raises
+from pytest import raises #importing raises only from putest
 from primitives import NumberRange, NumberRangeException
 
 
 class TestNumberRangeInit(object):
+    #creating some functions
     def test_support_range_object(self):
         num_range = NumberRange(NumberRange(1, 3))
         assert num_range.lower == 1
